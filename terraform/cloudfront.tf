@@ -1,5 +1,5 @@
 resource "aws_cloudfront_distribution" "main" {
-  comment = var.comment
+  comment = "CloudFront for infra project"
   enabled = "true"
 
   origin {
