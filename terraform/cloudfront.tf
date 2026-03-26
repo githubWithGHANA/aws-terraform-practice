@@ -3,7 +3,7 @@ resource "aws_cloudfront_distribution" "main" {
   enabled = "true"
 
   origin {
-    domain_name = var.alb_dns_name
+    domain_name = aws_lb.frontend_alb.dns_name
     origin_id   = var.origin_id
 
     custom_origin_config {

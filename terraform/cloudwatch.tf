@@ -34,6 +34,6 @@ resource "aws_cloudwatch_metric_alarm" "error_alarm" {
   statistic   = "Sum"
 
   alarm_actions = [
-    var.sns_topic_arn
+    aws_sns_topic.error_alert_topic.arn
   ]
 }

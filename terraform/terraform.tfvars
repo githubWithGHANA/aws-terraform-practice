@@ -1,4 +1,5 @@
 # ami_id     = "ami-051a31ab2f4d498f5"
+env_name = "dev"
 db_password = "root1234"
 slack_web_hook_url    = "https://hooks.slack.com/services/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"
 origin_id                        = "fe-web"
